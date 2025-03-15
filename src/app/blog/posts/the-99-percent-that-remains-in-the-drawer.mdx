@@ -1,0 +1,56 @@
+---
+title: "Finetuning Deep Seek R1 model"
+publishedAt: "2024-03-05"
+summary: " Dive into the process of fine-tuning the DeepSeek R1 reasoning model, exploring the tools, techniques, and insights gained from optimizing its performance for specialized tasks.."
+tag: "Blog Post"
+image : "/images/deepseek.png"
+---
+
+
+## Fine-tuning DeepSeek R1: A Journey into Enhanced Reasoning
+
+**Tag: Fine-tuning, LLM, DeepSeek, Reasoning, Machine Learning**
+
+---
+
+In the dynamic realm of artificial intelligence, large language models (LLMs) continue to evolve, pushing the boundaries of what's possible. Today, we delve into the intricate process of fine-tuning the DeepSeek R1 reasoning model, a powerful tool designed to tackle complex tasks with enhanced logical inference. This journey, much like the iterative design process, reveals the significance of the unseen 99%—the meticulous steps, adjustments, and refinements that culminate in a polished, high-performing model.
+
+## Setting the Stage: Tools and Techniques
+
+Our exploration begins with the essential tools and packages that empower us to fine-tune DeepSeek R1 effectively. We leveraged `unsloth` for efficient fine-tuning and inference, `peft` for LoRA-based optimizations, and various Hugging Face modules for data handling and model training. The process was further enhanced by `torch` for deep learning computations and `wandb` for experiment tracking.
+
+### Key Tools and Packages:
+
+-   **unsloth**: For optimized LLM fine-tuning and inference.
+-   **peft**: Enables LoRA (Low-Rank Adaptation) fine-tuning.
+-   **Hugging Face (transformers, trl, datasets)**: For model tasks, supervised fine-tuning, and dataset management.
+-   **torch**: The deep learning framework for training.
+-   **wandb**: Weights and biases for experiment tracking.
+
+## The Fine-Tuning Process: Step by Step
+
+1.  **Environment Setup**: We started by setting up our environment on Kaggle Notebooks, leveraging free GPU access and configuring API keys for Hugging Face and Weights & Biases.
+2.  **Model and Tokenizer Loading**: Using `FastLanguageModel.from_pretrained()`, we loaded the DeepSeek R1 model and its tokenizer, configuring parameters for efficient inference and fine-tuning, including 4-bit quantization for memory optimization.
+3.  **Initial Inference**: Before fine-tuning, we tested the model's performance on a medical use-case, defining a system prompt to guide its reasoning process. This step highlighted the model's potential and the need for further refinement.
+4.  **Dataset Preparation**: We prepared a fine-tuning dataset, structuring it according to our training prompt style, which included placeholders for questions, chain-of-thought reasoning, and final responses.
+5.  **LoRA Implementation**: We employed LoRA (Low-Rank Adaptation) using `get_peft_model()`, significantly reducing the number of trainable parameters and enhancing fine-tuning efficiency.
+6.  **Model Training**: With `SFTTrainer`, we fine-tuned the model, iterating through epochs and optimizing parameters to enhance its reasoning capabilities.
+7.  **Post-Fine-Tuning Inference**: We evaluated the fine-tuned model's performance on new questions, observing improved accuracy and conciseness in its responses.
+8.  **Model Upload**: Finaly we pushed the model to the huggingface hub for future use.
+
+## The Insights Gained
+
+This fine-tuning journey underscored the importance of iterative refinement. Much like how design engineers meticulously iterate on their creations, we fine-tuned the DeepSeek R1 model to enhance its performance. The initial model, while capable, required adjustments to deliver optimal results.
+
+### Key Takeaways:
+
+-      Fine-tuning LLMs is an iterative process that requires careful parameter adjustments.
+-      LoRA significantly enhances fine-tuning efficiency by reducing trainable parameters.
+-      Proper dataset preparation and prompt engineering are crucial for model performance.
+-   Testing the model before and after fine-tuning provides valuable insights into its progress.
+
+## The 99% That Matters
+
+Just as design engineers value the unseen 99% of their work, the fine-tuning process highlights the significance of every step, adjustment, and iteration. These seemingly small changes collectively contribute to the model's enhanced performance.
+
+In conclusion, fine-tuning DeepSeek R1 was an enlightening experience that showcased the power of iterative refinement and the importance of the unseen 99%. By leveraging the right tools and techniques, we unlocked the model's enhanced reasoning capabilities, paving the way for future advancements in AI.
