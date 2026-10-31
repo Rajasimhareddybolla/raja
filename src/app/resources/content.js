@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Raja ",
-  lastName: "",
+  firstName: "Raja Simha Reddy",
+  lastName: "Bolla",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "AI & ML Engineer",
+  role: "Applied AI & Security Automation Engineer",
   avatar: "/images/raja.jpeg",
-  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Hindi" , "Telugu"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Kolkata",
+  languages: ["English", "Hindi", "Telugu"],
 };
 
 const newsletter = {
@@ -17,16 +17,13 @@ const newsletter = {
   title: <>Let's Connect</>,
   description: (
     <>
-      Feel free to reach out with opportunities, questions, or just to say hello.
-      I'm always open to connecting with fellow developers and potential collaborators.
+      Feel free to reach out with engineering opportunities, collaborations, or technical discussions.
+      I'm always open to connecting with fellow engineers, founders, and security researchers.
     </>
   ),
-
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
@@ -51,13 +48,14 @@ const social = [
 
 const home = {
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>AI & ML Engineer</>,
+  title: `${person.name}'s Engineering Portfolio`,
+  description: `Portfolio website showcasing my work as an ${person.role}`,
+  headline: <>Applied AI & Security Automation Engineer</>,
   subline: (
     <>
-      I'm Raja, a AI engineer at <InlineCode>Pinoxio</InlineCode>, where I craft Ai Agents 
-      <br /> Finetune LLM'S . After hours, I build my own projects.
+      Ex-CSIRT SWE Intern at <InlineCode>Docusign</InlineCode> and AI Engineer at <InlineCode>Pinoxio</InlineCode>.
+      <br />
+      I engineer multi-agent security pipelines, low-latency LLM inference architectures, and distributed edge network defenses.
     </>
   ),
 };
@@ -65,7 +63,7 @@ const home = {
 const about = {
   label: "About",
   title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Bengaluru, India`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -82,52 +80,64 @@ const about = {
     title: "Introduction",
     description: (
       <>
-    Raja is a Computer Science and Engineering student based in Bengaluru with a passion for leveraging AI to solve complex problems. His work spans AI-powered applications, full-stack development, and optimizing for performance and scalability.    
-
-
+        Raja is a Computer Science and Engineering student at BMSCE specializing in scalable AI architectures, automated security pipelines, and low-latency distributed backend systems. With enterprise experience at Docusign CSIRT and Pinoxio, he builds resilient agentic workflows, fine-tunes specialized domain models, and designs distributed defenses across GCP, AWS, and Azure.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "Pinoxio",
-        timeframe: "2024 - Present",
-        role: "AI & ML Engineer",
-        
-
+        company: "Docusign",
+        timeframe: "May 2026 - August 2026",
+        role: "CSIRT Software Engineer Intern",
         achievements: [
           <>
-            Designed and implemented AI-powered agents for complex tasks like tutoring, enabling personalized learning experiences.
+            Architected and deployed <strong>TriageX</strong>, an autonomous multi-agent AI pipeline (Endpoint, Threat Intel, and Synthesis agents) automating manual CSIRT triage protocols.
           </>,
           <>
-          Applied Reinforcement Learning (RL) to enhance interactivity, making gents achieve human-like Tutoring which increases
-          avg students engagement by 7% .
+            Engineered a parallelized prefetch pipeline across 7+ enterprise systems (Sentinel, Cortex XDR, Jira), normalizing 60k+ words of context into structured JSON and eliminating AI agent cold starts.
           </>,
           <>
-           Collaborated with senior dev’s to design and implement an end-to-end audio processing pipeline using open-source models.
-            </>,
+            Slashed Mean Time to Triage (MTTT) from 2+ hours to under 3 minutes per alert, saving 140+ engineering hours/month with a 94% true-positive accuracy rate.
+          </>,
           <>
-           Achieved an impressive average latency of 0.3 seconds on small edge devices, optimizing for performance and eﬃciency
+            Enforced strict SOP guardrails and hardened agents against OWASP prompt injection, hallucination, and data extraction risks, reducing triage infrastructure costs to &lt;$1.00/alert.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-
-        ],
+        images: [],
       },
       {
-        company: "Code Alpha",
-        timeframe: "2024-03",
-        role: "ML and Backend developer",
+        company: "Pinoxio",
+        timeframe: "December 2024 - February 2026",
+        role: "AI & Backend Engineer (YC Technical Lead)",
         achievements: [
           <>
-          Integrated ML-based product recommendation system, increasing user engagement
+            Co-architected core platform infrastructure from scratch alongside a Senior Walmart Engineer, serving as technical lead on the Y Combinator application.
           </>,
           <>
-            Collaborated with a team of 4 to develop and deploy an e-commerce website, optimizing the back-end .
+            Developed an adaptive, real-time SAT math tutoring agent orchestrating dynamic prompt pipelines, knowledge graph traversal, and stateful evaluation loops.
+          </>,
+          <>
+            Curated and fine-tuned a proprietary dataset of 1,000+ domain-specific instruction-response pairs, boosting mathematical reasoning accuracy by 9% while drastically lowering compute overhead.
+          </>,
+          <>
+            Optimized streamed inference pipelines using distributed Redis caching and WebSockets, cutting streaming latency by 75% (40s down to 10s) and driving edge inference latency to 0.3s.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Vignesh Agencies",
+        timeframe: "January 2026 - February 2026",
+        role: "Software Engineer (Contract)",
+        achievements: [
+          <>
+            Architected an end-to-end field service and e-commerce platform using Flutter, Firebase Firestore, and Node.js Cloud Functions.
+          </>,
+          <>
+            Designed fault-tolerant order checkout state machines with atomic transactions to eliminate inventory race conditions across simultaneous sessions.
           </>,
         ],
         images: [],
@@ -135,56 +145,42 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "BMS Collage of Engineering",
-        description: <>Pursuing Computer Science and Engineering with current <bold>9.1</bold> CGPA.</>,
+        name: "B. M. S. College of Engineering (BMSCE)",
+        description: <>Bachelor of Engineering in Computer Science and Engineering (2023 - 2027) · Current GPA: <strong>9.0 / 10.0</strong>.</>,
       },
       {
-        name: "Narayana jr collage of Engineering",
-        description: <>Studied online Mathemetics , Physics , Chemistry with a grade of 97.5 .</>,
+        name: "Narayana Junior College",
+        description: <>Senior Secondary Education in Mathematics, Physics, and Chemistry with a score of <strong>97.5%</strong>.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Gen AI",
-        description: <>Able to develop agentic AI-driven workforce solutions, integrating generative AI for automation, decision-making, and task execution in various domains.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-
-        ],
+        title: "AI Security & Threat Evaluation",
+        description: <>Autonomous red teaming, OWASP LLM Top 10 mitigation, MITRE ATLAS mapping, PyRIT adversarial crescendo attacks, and Garak vulnerability scanning.</>,
+        images: [],
       },
       {
-        title: "Mechine Learning and Deep Learning ",
-        description: <>Abel to develop ML and Deep Learning models from basic neural networks to advanced systems like GAN'S ,Transformers.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-
-        ],
+        title: "Agentic Systems & LLMs",
+        description: <>Multi-agent orchestration (CrewAI, LangChain), Model Context Protocol (MCP), tool-calling agents, stateful evaluation loops, RAG, and domain instruction fine-tuning.</>,
+        images: [],
       },
       {
-        title: "SwiftUI",
-        description: <>Proficient in building modern, declarative UIs for iOS, macOS, watchOS, and tvOS using SwiftUI, leveraging its reactive programming model and seamless integration with Swift.</>,
-        images: [
-          {
-            src: "/images/projects/project-01/Sophia.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/sophia2.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Distributed Systems & Cloud Backend",
+        description: <>High-throughput microservices using FastAPI, Flask, and Node.js; Linux socket-level telemetry (/proc/net/tcp); Docker, Kubernetes, AWS (EC2, VPC), GCP, and distributed Redis caching.</>,
+        images: [],
+      },
+      {
+        title: "Full-Stack & Mobile Development",
+        description: <>Modern responsive web applications with Next.js 14, React, TypeScript, and Once UI; cross-platform mobile development with Flutter and reactive Firebase stores.</>,
+        images: [],
       },
     ],
   },
@@ -192,86 +188,80 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Writing about AI, Systems & Security...",
+  description: `Read technical writing and architecture breakdowns by ${person.name}`,
 };
 
 const work = {
   label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  title: "Engineering Projects",
+  description: `Showcase of production systems, research testbeds, and hackathon wins by ${person.name}`,
 };
 
 const gallery = {
   label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
+  title: "Certificates & Achievements",
+  description: `A collection of hackathon wins, honors, and technical certifications by ${person.name}`,
   images: [
-    // Mixed arrangement of certificates and project screenshots with varied orientations
     {
       src: "/images/gallery/gal/sophia.png",
-      alt: "Sophia app screenshot",
+      alt: "Sophia AI podcast generator",
       orientation: "horizontal",
       width: 16,
       height: 9,
     },
     {
       src: "/images/gallery/gal/ml.png",
-      alt: "Machine Learning certificate",
+      alt: "Machine Learning certification",
       orientation: "horizontal",
       width: 16,
       height: 9,
     },
     {
       src: "/images/gallery/gal/hack_win.png",
-      alt: "IBM certificate",
+      alt: "Hackathon 1st place victory",
       orientation: "vertical",
       width: 9,
       height: 16,
     },
     {
       src: "/images/gallery/gal/pers.png",
-      alt: "CS50x certificate",
+      alt: "Harvard CS50x certification",
       orientation: "vertical",
       width: 9,
       height: 16,
     },
     {
       src: "/images/gallery/gal/IBM.png",
-      alt: "IBM certificate",
+      alt: "IBM certification",
       orientation: "horizontal",
       width: 16,
       height: 9,
     },
     {
       src: "/images/gallery/gal/db.png",
-      alt: "Database certificate",
-      orientation: "horizontal", 
+      alt: "Database design certification",
+      orientation: "horizontal",
       width: 16,
       height: 9,
     },
     {
       src: "/images/gallery/gal/cs50w.png",
-      alt: "CS50W certificate",
+      alt: "Harvard CS50W certification",
       orientation: "horizontal",
       width: 16,
       height: 9,
     },
     {
       src: "/images/gallery/gal/sophia2.png",
-      alt: "Sophia app second screenshot",
+      alt: "Sophia dynamic audio synthesis",
       orientation: "horizontal",
       width: 16,
       height: 9,
     },
-
     {
       src: "/images/gallery/gal/DL.png",
-      alt: "Deep Learning certificate",
+      alt: "Deep Learning certification",
       orientation: "horizontal",
       width: 16,
       height: 9,
@@ -280,19 +270,19 @@ const gallery = {
       src: "/images/gallery/gal/lumi.png",
       alt: "Lumi project",
       orientation: "horizontal",
-      width: 16, 
+      width: 16,
       height: 9,
     },
     {
       src: "/images/gallery/gal/cer.png",
-      alt: "Machine Learning certificate",
+      alt: "Nutanix Certified Associate",
       orientation: "horizontal",
       width: 16,
       height: 9,
     },
     {
       src: "/images/gallery/gal/cs50x.png",
-      alt: "CS50x certificate",
+      alt: "CS50x certification",
       orientation: "horizontal",
       width: 16,
       height: 9,
