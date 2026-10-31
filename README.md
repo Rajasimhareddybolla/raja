@@ -1,89 +1,57 @@
-# **Build your portfolio with Once UI's Magic Portfolio**
+# 🌐 Raja Simha Reddy Bolla — Engineering Portfolio ([rajasimha.in](https://rajasimha.in))
 
-View the [demo here](https://demo.magic-portfolio.com).
+> **Official Personal Portfolio & Technical Showcase**  
+> Engineered with Next.js 14, TypeScript, and the Once UI design system. Showcases production systems across AI security automation, distributed edge detection, and low-latency LLM inference architectures.
 
-![Magic Portfolio](public/images/cover.png)
+[![Website](https://img.shields.io/badge/Website-rajasimha.in-00C7B7?style=flat&logo=safari&logoColor=white)](https://rajasimha.in)
+[![Next.js](https://img.shields.io/badge/Next.js-14+-black?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Once UI](https://img.shields.io/badge/Design_System-Once_UI-purple?style=flat)](https://once-ui.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+---
 
-# **Getting started**
+## ⚡ Overview
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+This repository powers [rajasimha.in](https://rajasimha.in), the personal digital home and portfolio of **Raja Simha Reddy Bolla** — Applied AI, Security Automation & Distributed Systems Engineer.
 
-**1. Clone the repository**
-```
-git clone https://github.com/once-ui-system/magic-portfolio.git
-```
+### 🌟 Featured Highlights on the Site
+- 🛡️ **Enterprise Security Automation:** Architecture of **TriageX** at **Docusign CSIRT**, saving 140+ hours/month and slashing triage time from 2+ hours to under 3 minutes with 94% true-positive accuracy.
+- 🤖 **Agentic & Low-Latency AI:** Production LLM fine-tuning and 0.3s edge inference streaming pipelines co-architected at **Pinoxio** (YC application technical lead).
+- 🌐 **Systems & Network Defense:** AWS EC2 multi-node testbed ([syn-edge-flooding](https://github.com/Rajasimhareddybolla/syn-edge-flooding)) achieving 100% detection rate and 0.9331 AUC-ROC for edge network SYN flood detection.
+- 🏆 **Hackathon & Tournament Victories:** 1st Place at Code4EdTech Hackathon (NEXE), Top 1% Finalist at JPMorgan Chase Code for Good 2025, Top 30 in India at ISRO Anthariksha Hackathon, and 1st Place at Byte Battle DSA.
 
-**2. Install dependencies**
-```
+---
+
+## 🛠️ Tech Stack & Architecture
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript 5
+- **Design System:** [Once UI](https://once-ui.com) tokens, accessible components, and custom CSS variables
+- **Content Engine:** Dynamic MDX / JS configuration layer (`src/app/resources/content.js`)
+- **Hosting & CI/CD:** Vercel / Cloudflare with automated preview branch deployments
+
+---
+
+## 🚀 Local Development
+
+```bash
+# 1. Clone repository
+git clone https://github.com/Rajasimhareddybolla/raja.git
+cd raja
+
+# 2. Install dependencies
 npm install
-```
 
-**3. Run dev server**
-```
+# 3. Start development server
 npm run dev
 ```
 
-**4. Edit config**
-```
-src/app/resources/config
-```
+Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
 
-**5. Edit content**
-```
-src/app/resources/content
-```
+---
 
-**6. Create blog posts / projects**
-```
-Add a new .mdx file to src/app/blog/posts or src/app/work/projects
-```
+## 👨‍💻 Author & Contact
 
-# **Features**
-
-## **Once UI**
-- All tokens, components & features of [Once UI](https://once-ui.com)
-
-## **SEO**
-- Automatic open-graph and X image generation with next/og
-- Automatic schema and metadata generation based on the content file
-
-## **Design**
-- Responsive layout optimized for all screen sizes
-- Timeless design without heavy animations and motion
-- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
-
-## **Content**
-- Render sections conditionally based on the content file
-- Enable or disable pages for blog, work, gallery and about / CV
-- Generate and display social links automatically
-- Set up password protection for URLs
-
-## **Localization**
-- A localized version of Magic Portfolio is available with the next-intl library
-- To use localization, switch to the 'i18n' branch
-
-# **Authors**
-
-Connect with us on Threads or LinkedIn.
-
-Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
-Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
-
-Localization added by [François Hernandez](https://github.com/francoishernandez)
-
-# **Get involved**
-
-- Join the [Design Engineers Club on Discord](https://discord.com/invite/5EyAQ4eNdS) and share your portfolio with us!
-- Report a [bug](https://github.com/once-ui-system/magic-portfolio/issues/new?labels=bug&template=bug_report.md).
-
-# **License**
-
-Distributed under the CC BY-NC 4.0 License.
-- Commercial usage is not allowed.
-- Attribution is required.
-
-See `LICENSE.txt` for more information.
-
-# **Deploy with Vercel**
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fcover.png)
+**Raja Simha Reddy Bolla**  
+* [LinkedIn](https://linkedin.com/in/raja-simha-reddy-bolla) • [GitHub](https://github.com/Rajasimhareddybolla) • [Email](mailto:rajasimhabolla@gmail.com) • [Website](https://rajasimha.in)
